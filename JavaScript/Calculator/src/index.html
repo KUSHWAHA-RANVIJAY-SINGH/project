@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="output.css">
+  <title>Simple Calculator with Js and Tailwind CSS</title>
+</head>
+<body>
+      <div class="grid grid-cols-1 justify-items-center content-center h-screen">
+        <div>
+          <h1 class="font-bold text-center text-2xl">Simple Calculator with Js and Tailwind CSS</h1>
+        </div>
+        <div class="grid grid-cols-1 gap-4 bg-slate-300 p-12 m-4 rounded-lg">
+          <div class="flex  flex-col">
+            <label class="font-bold mb-2 text-xl  ">Enter The First Number</label>
+             <input type="text" placeholder="E.x-25" class="rounded-md p-2 " id="firstNumber">
+
+             <label class="font-bold mt-4 text-xl"> Enter The Second Number</label>
+             <input type="text" placeholder="ex-10"
+             class="p-2 mt-2 rounded-md" id="SecondNum">
+          </div>
+          <div>
+            <button class="bg-orange-400 text-white p-2 rounded-md" onclick="add()">
+              Add
+            </button>
+            <button class="bg-orange-400 text-white p-2 rounded-md " onclick="Sub()">Sub</button>
+            <button class="bg-orange-400 text-white rounded-md p-2" onclick="Mul()">Mul</button>
+            <button class="bg-orange-400 text-white rounded-md p-2" onclick="Div()">Div</button>
+            <button class="bg-orange-400 text-white rounded-md p-2" onclick="Mod()">Mod</button>
+            <button class="bg-orange-400 text-white rounded-md p-2"onclick='Clear()'>Clear</button>
+          </div>
+          <h1 class="font-bold text-2xl">Result: <span id="result"></span></h1>
+        </div>
+
+        <footer class="bottom-0 absolute">
+          <a href="https://github.com/KUSHWAHA-RANVIJAY-SINGH">Made with ❤️❤️ by  KUSHWAHA-RANVIJAY-SINGH</a>
+        </footer>
+      </div>
+</body>
+<script src="script.js"></script>
+</html>
